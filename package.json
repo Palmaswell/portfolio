@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Mauricio Palma Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop -p 3000 -S",
+    "gatsby": "gatsby"
+  },
+  "author": "Mauricio Palma <mauricio.palma@woodlikeocean.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {},
+  "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "gatsby": "^2.17.13",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1"
+  }
+}
