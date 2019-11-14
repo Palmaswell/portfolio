@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Foo } from '../components';
-
-
+import { Foo, HtmlHead } from '../components';
 
 export const Index: React.FunctionComponent = (): JSX.Element => {
+  // tslint:disable-next-line: no-void-expression
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -23,23 +21,10 @@ export const Index: React.FunctionComponent = (): JSX.Element => {
 
   return (
     <>
-      <Helmet
-        htmlAttributes={{ lang: 'en-US' }}
+      <HtmlHead
+        lang="en-US"
         title={meta.title}
-        meta={[
-          {
-            httpEquiv: 'Content-Type',
-            content: 'text/html; charset=utf-8',
-          },
-          {
-            name: 'description',
-            content: meta.description,
-          },
-          {
-            name: 'viewport',
-            content: 'width=device-width, initial-scale=1',
-          },
-        ]}
+        description={meta.description}
       />
       <Foo />
     </>

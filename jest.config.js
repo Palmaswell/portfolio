@@ -14,5 +14,6 @@ module.exports = {
     '.(ts|tsx)': 'ts-jest',
   },
   testRegex: TEST_REGEX,
-  testPathIgnorePatterns: ['<rootDir>/node_modules/']
+  testMatch: null,
+  testPathIgnorePatterns: ['/node_modules/', '/.cache/', '/public/']
 }

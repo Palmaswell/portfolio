@@ -1,2 +1,2 @@
 export * from './html-head';
-export * from './foo';
+export * from './types';
