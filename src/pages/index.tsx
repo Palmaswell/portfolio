@@ -2,11 +2,9 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const Foo: React.FunctionComponent = (): JSX.Element => (
-  <div>
-    <h1>Hi Mom!!!!!!!</h1>
-  </div>
-);
+import { Foo } from '../components';
+
+
 
 export const Index: React.FunctionComponent = (): JSX.Element => {
   const { site } = useStaticQuery(graphql`
